@@ -15,7 +15,9 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   DIRECTORY msg
   FILES
-  LookAtTarget.msg)
+  LookAtTarget.msg
+  EnvironmentRegionRequest.msg
+  ObjectDetectRequest.msg)
 
 #add_service_files(
 #  DIRECTORY srv
@@ -28,9 +30,12 @@ add_message_files(
 add_action_files(
    FILES
    LookAt.action
+   DetectObject.action
 )
 
 generate_messages(DEPENDENCIES sensor_msgs geometry_msgs actionlib_msgs std_msgs)
+
+include_directories(${catkin_INCLUDE_DIRS})
 
 catkin_package(
 #  INCLUDE_DIRS include

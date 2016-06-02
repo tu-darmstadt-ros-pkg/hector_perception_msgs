@@ -1,0 +1,8 @@
+# Detection request
+ObjectDetectRequest detect_request
+---
+
+# Indicates if detection has been successful
+bool detection_success
+
+---
