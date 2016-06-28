@@ -17,7 +17,9 @@ add_message_files(
   FILES
   LookAtTarget.msg
   EnvironmentRegionRequest.msg
-  ObjectDetectRequest.msg)
+  ObjectDetectRequest.msg
+  PerceptionData.msg
+  PerceptionDataArray.msg)
 
 #add_service_files(
 #  DIRECTORY srv
