@@ -16,6 +16,7 @@ add_message_files(
   DIRECTORY msg
   FILES
   LookAtTarget.msg
+  CameraPatternInfo.msg
   EnvironmentRegionRequest.msg
   ObjectDetectRequest.msg
   PerceptionData.msg
