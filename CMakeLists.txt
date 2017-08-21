@@ -22,13 +22,11 @@ add_message_files(
   PerceptionData.msg
   PerceptionDataArray.msg)
 
-#add_service_files(
-#  DIRECTORY srv
-#  FILES
-#  GetPoseInFrame.srv
-#  PointCloudRegionRequest.srv
-#  OctomapRegionRequest.srv
-#)
+add_service_files(
+  DIRECTORY srv
+  FILES
+  ProjectPixelTo3DRay.srv
+)
   
 add_action_files(
    DIRECTORY action

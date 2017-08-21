@@ -1,0 +1,4 @@
+# Projects a pixel to a normalized 3D ray.
+geometry_msgs/PointStamped pixel # pixel position in x and y. z is unused.
+---
+geometry_msgs/PointStamped ray # normalized vector
