@@ -26,6 +26,7 @@ add_service_files(
   DIRECTORY srv
   FILES
   ProjectPixelTo3DRay.srv
+  Project3DRayToPixel.srv
 )
   
 add_action_files(
