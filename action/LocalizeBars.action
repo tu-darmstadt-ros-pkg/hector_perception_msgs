@@ -1,0 +1,21 @@
+# Indicates if the front cam has to be used for detection or the rear cam.
+bool front_cam
+---
+
+# Indicates if detection has been successful
+bool success 
+
+# The position in front of the bars and the orientation to the bars 
+geometry_msgs/PoseStamped pos
+
+# Error code, if loaclization has failed
+uint8 error 
+uint8 ERROR_NO_ERROR=0
+uint8 ERROR_PROJECT_PIXEL_TO_3D_RAY=1
+uint8 ERROR_GET_DISTANCE_TO_OBSTACLE=2
+uint8 ERROR_NO_INTERSECTION_POINT=3
+
+# Error message
+string error_msg
+
+---

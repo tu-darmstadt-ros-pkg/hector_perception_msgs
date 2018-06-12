@@ -33,6 +33,7 @@ add_action_files(
    FILES
    LookAt.action
    DetectObject.action
+   LocalizeBars.action
 )
 
 generate_messages(DEPENDENCIES sensor_msgs geometry_msgs actionlib_msgs std_msgs)
