@@ -1,0 +1,9 @@
+# Projects a pixel to a normalized 3D ray.
+geometry_msgs/PoseStamped pose # Center of the image. The image plane corresponds to the y/z plane.
+int32 image_width                      # Desired width of the image in pixels
+int32 image_height                     # Desired height of the image in pixels
+float64 pixels_per_m_x                 # Pixels per meter in x direction
+float64 pixels_per_m_y                 # Pixels per meter in y direction
+
+---
+sensor_msgs/Image image                # Resulting pinhole projection
