@@ -20,7 +20,10 @@ add_message_files(
   EnvironmentRegionRequest.msg
   ObjectDetectRequest.msg
   PerceptionData.msg
-  PerceptionDataArray.msg)
+  PerceptionDataArray.msg
+  BoundingBox2D.msg
+  ObjectDetection2D.msg
+  ObjectDetection2DArray.msg)
 
 add_service_files(
   DIRECTORY srv
