@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   sensor_msgs
   std_msgs
+  message_generation
 )
 
 
@@ -47,7 +48,7 @@ include_directories(${catkin_INCLUDE_DIRS})
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES hector_perception_msgs
-  CATKIN_DEPENDS actionlib_msgs geometry_msgs sensor_msgs std_msgs
+  CATKIN_DEPENDS actionlib_msgs geometry_msgs sensor_msgs std_msgs message_runtime
 #  DEPENDS system_lib
 )
 
