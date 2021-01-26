@@ -26,12 +26,12 @@ add_message_files(
   ObjectDetection2D.msg
   ObjectDetection2DArray.msg)
 
-add_service_files(
-  DIRECTORY srv
-  FILES
-  ProjectPixelTo3DRay.srv
-  GetPinholeProjection.srv
-)
+# add_service_files(
+#   DIRECTORY srv
+#   FILES
+#   ProjectPixelTo3DRay.srv
+#   GetPinholeProjection.srv
+# )
   
 add_action_files(
    DIRECTORY action
