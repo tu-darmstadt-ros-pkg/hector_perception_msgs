@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(hector_perception_msgs)
 
 ## Find catkin macros and libraries
@@ -12,11 +12,11 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 
-
 add_message_files(
   DIRECTORY msg
   FILES
   LookAtTarget.msg
+  LookAtObservationTarget.msg
   CameraPatternInfo.msg
   EnvironmentRegionRequest.msg
   ObjectDetectRequest.msg
@@ -36,6 +36,7 @@ add_message_files(
 add_action_files(
    DIRECTORY action
    FILES
+   LookAtObservationPose.action
    LookAt.action
    DetectObject.action
    LocalizeBars.action
@@ -50,6 +51,10 @@ catkin_package(
 #  LIBRARIES hector_perception_msgs
   CATKIN_DEPENDS actionlib_msgs geometry_msgs sensor_msgs std_msgs message_runtime
 #  DEPENDS system_lib
+)
+
+include_directories(
+  ${catkin_INCLUDE_DIRS}
 )
 
 ###########
