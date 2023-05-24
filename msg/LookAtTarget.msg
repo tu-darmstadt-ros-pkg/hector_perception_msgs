@@ -12,3 +12,6 @@ bool no_continuous_tracking
 
 # If this is non-empty, following the selected pattern is activated.
 string pattern
+
+# The frame to perform the aiming with
+string aim_frame
