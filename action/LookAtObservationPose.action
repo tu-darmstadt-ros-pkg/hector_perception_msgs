@@ -1,4 +1,9 @@
 # pose of the POI
 LookAtObservationTarget target
+int8 mode
+
+int8 PLAN_TO_POSE = 0
+int8 VISUAL_SERVOING = 1
+int8 PLAN_TO_POSE_AND_VISUAL_SERVOING = 2
 ---
 ---
