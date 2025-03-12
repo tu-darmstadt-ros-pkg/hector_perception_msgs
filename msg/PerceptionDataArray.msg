@@ -1,7 +1,7 @@
 # List of perceptions
-PerceptionData[] perceptionList
+PerceptionData[] perception_list
 
 # Type of the percept. E.g. qrcode, motion,... 
-string perceptionType
+string perception_type
 std_msgs/Header header
 
