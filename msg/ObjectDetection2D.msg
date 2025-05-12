@@ -1,3 +1,4 @@
+std_msgs/Header header
 int32 id  # Unique id of object class
 string label  # String that identifies the object class
 float32 score # Confidence of the detection between 0 and 1
