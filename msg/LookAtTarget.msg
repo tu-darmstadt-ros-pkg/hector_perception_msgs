@@ -6,6 +6,10 @@
 # The target point to look at given in an arbitrary frame.
 geometry_msgs/PointStamped target_point
 
+# Optional joint_states, if given, target_point is discarded and
+#   camera joints are moved directly to the given joint_values
+float64[] joint_values
+
 # If set to true, only moves to target point once
 # Otherwise, it is tracked continuously. (NOT USED YET)
 bool no_continuous_tracking
